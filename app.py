@@ -39,7 +39,7 @@ def get_prediction():
     baby_df = pd.DataFrame(baby_data_cleaned)
     
     # load machine trained model
-    with open("model/model.pkl","rb") as obj:
+    with open("model.pkl","rb") as obj:
         model = pickle.load(obj)
         
     # make prediction on user data

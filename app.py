@@ -44,7 +44,7 @@ def get_prediction():
         
     # make prediction on user data
     prediction = model.predict(baby_df)
-    prediction = round(float(prediction),2)
+    prediction = round(float(prediction),3)
     
     # return prediction in a json format
     response = {"Prediction" : prediction}
